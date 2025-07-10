@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Mushen Ji – ตำนานเทพกู้จักรวาล ตอนที่ 17 พากย์ไทย</title>
-  <link rel="canonical" href="https://mushen-ji.github.io/Mushen-Ji-ep16-thai.html" />
+  <link rel="canonical" href="https://mushen-ji.github.io/Mushen-Ji-ep17-thai.html" />
   <link rel="icon" href="https://img2.pic.in.th/pic/039b1c3dd878efaf74.png" type="image/png"/>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
@@ -27,15 +27,12 @@
     .nav-buttons { text-align: center; margin-bottom: 25px; }
     .nav-buttons a { display: inline-block; margin: 0 8px; background-color: #ff3d00; color: white; padding: 8px 16px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background-color 0.3s; }
     .nav-buttons a:hover { background-color: #ff7043; }
-    .coming-soon-box {
-      background: #222;
-      color: #ffccbc;
-      text-align: center;
-      padding: 30px 15px;
-      border-radius: 10px;
-      font-size: 1.2rem;
-      margin-bottom: 40px;
-    }
+    .video-fullscreen { position: relative; width: 100vw; height: 56.25vw; background: #000; overflow: hidden; }
+    iframe { display: none; }
+    #video-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 2; }
+    .play-button { width: 80px; height: 80px; background: rgba(255, 255, 255, 0.2); border: 3px solid #fff; border-radius: 50%; position: relative; }
+    .play-button::before { content: ''; position: absolute; left: 32%; top: 26%; width: 0; height: 0; border-left: 24px solid #fff; border-top: 16px solid transparent; border-bottom: 16px solid transparent; }
+    #coming-soon-message { display: none; color: #ffccbc; font-size: 1.2rem; text-align: center; padding: 40px 20px; }
     footer { text-align: center; padding: 20px; background-color: #1f1f1f; color: #ccc; font-size: 0.9rem; margin-top: 40px; }
     #histats_wrapper { width: 100%; text-align: center; margin-top: 30px; }
     #histatsC { display: inline-block !important; float: none !important; }
@@ -54,11 +51,14 @@
       <a href="Mushen-Ji-ep16-thai.html">ก่อนหน้า</a>
       <a href="thai">ทั้งหมด</a>
     </div>
-
-    <div class="coming-soon-box">
-      🔔 ตอนที่ 17 กำลังรออัปเดตเร็วๆ นี้ กรุณากลับมาตรวจสอบใหม่ภายหลัง
-    </div>
   </main>
+
+  <div class="video-fullscreen">
+    <div id="video-overlay" onclick="showComingSoon()">
+      <div class="play-button"></div>
+    </div>
+    <div id="coming-soon-message">ตอนที่ 17 กำลังมาเร็วๆ นี้ โปรดรอติดตาม</div>
+  </div>
 
   <footer>© 2025 Mushen Ji — ดูอนิเมะ Mushen Ji พากย์ไทยทุกตอน</footer>
 
@@ -66,6 +66,12 @@
     const menuToggle = document.getElementById('menuToggle');
     const navMenu = document.getElementById('navMenu');
     menuToggle.onclick = () => navMenu.classList.toggle('active');
+
+    function showComingSoon() {
+      window.open('/go.html', '_blank');
+      document.getElementById('video-overlay').style.display = 'none';
+      document.getElementById('coming-soon-message').style.display = 'block';
+    }
   </script>
 
   <div id="histats_wrapper"><div id="histats_counter"></div></div>
