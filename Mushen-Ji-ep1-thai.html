@@ -51,15 +51,14 @@
 
   <main>
     <div class="video-title">Mushen Ji – ตำนานเทพกู้จักรวาล ตอนที่ 1 พากย์ไทย</div>
-    <div class="nav-buttons"><a href="/">ทั้งหมด</a><a href="Mushen-Ji-ep2-thai.html">ถัดไป</a>
-    </div>
+    <div class="nav-buttons"><a href="Mushen-Ji-ep2-thai.html">ถัดไป</a></div>
   </main>
 
   <div class="video-fullscreen">
     <div id="video-overlay" onclick="showVideo()">
       <div class="play-button"></div>
     </div>
-    <iframe allow="autoplay" allowfullscreen id="videoIframe" src="" title="Mushen Ji – ตำนานเทพกู้จักรวาล ตอนที่ 1 พากย์ไทย"></iframe>
+    <iframe allow="autoplay" allowfullscreen id="videoIframe" src="" title="Mushen Ji – ตอนที่ 1"></iframe>
   </div>
 
   <p style="text-align:center; color:#ccc; margin-top: 10px;">โฆษณาแสดง 2-3 ครั้งเท่านั้น</p>
@@ -72,7 +71,7 @@
     menuToggle.addEventListener('click', () => navMenu.classList.toggle('active'));
     function showVideo() {
       setTimeout(() => window.open('/go.html', '_blank'), 700);
-      const encodedSrc = "aHR0cHM6Ly92aWRlby5zaWJuZXQucnUvc2hlbGwucGhwP3ZpZGVvaWQ9NTk1ODU3NA==";
+      const encodedSrc = "aHR0cHM6Ly9nb29kc3RyZWFtLm9uZS9lbWJlZC1oc2d3N2wxb3cyemkuaHRtbA==";
       const videoUrl = atob(encodedSrc);
       const iframe = document.getElementById('videoIframe');
       iframe.src = videoUrl;
@@ -81,38 +80,37 @@
     }
   </script>
 
-
-<!-- Histats.com START -->
-<style>
-#histats_wrapper, #histatsC, #histats_counter {
-  display: none !important;
-  visibility: hidden;
-  height: 0;
-  overflow: hidden;
-}
-</style>
-<div id="histats_wrapper">
-  <div id="histats_counter"></div>
-</div>
-<script type="text/javascript">
-  var _Hasync = _Hasync || [];
-  _Hasync.push(['Histats.startgif', '1,4944258,4,10047,""']);
-  _Hasync.push(['Histats.fasi', '1']);
-  _Hasync.push(['Histats.track_hits', '']);
-  (function () {
-    var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-    hs.src = ('//s10.histats.com/js15_gif_as.js');
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-  })();
-</script>
-<noscript>
+  <!-- Histats.com START -->
+  <style>
+  #histats_wrapper, #histatsC, #histats_counter {
+    display: none !important;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+  }
+  </style>
   <div id="histats_wrapper">
-    <a href="/" target="_blank"><div id="histatsC">
-      <img border="0" src="//s4is.histats.com/stats/i/4944258.gif?4944258&103">
-    </div></a>
+    <div id="histats_counter"></div>
   </div>
-</noscript>
-<!-- Histats.com END -->
+  <script type="text/javascript">
+    var _Hasync = _Hasync || [];
+    _Hasync.push(['Histats.startgif', '1,4944258,4,10047,""']);
+    _Hasync.push(['Histats.fasi', '1']);
+    _Hasync.push(['Histats.track_hits', '']);
+    (function () {
+      var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+      hs.src = ('//s10.histats.com/js15_gif_as.js');
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+    })();
+  </script>
+  <noscript>
+    <div id="histats_wrapper">
+      <a href="/" target="_blank"><div id="histatsC">
+        <img border="0" src="//s4is.histats.com/stats/i/4944258.gif?4944258&103">
+      </div></a>
+    </div>
+  </noscript>
+  <!-- Histats.com END -->
 
 </body>
 </html>
