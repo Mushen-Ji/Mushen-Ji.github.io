@@ -23,11 +23,13 @@
   </header>
   <main>
     <div class="video-title">Mushen Ji – ตำนานเทพกู้จักรวาล ตอนที่ 9 พากย์ไทย</div>
+    
     <div class="nav-buttons">
       <a href="Mushen-Ji-ep8-thai.html">ก่อนหน้า</a>
       <a href="thai">ทั้งหมด</a>
       <a href="Mushen-Ji-ep10-thai.html">ถัดไป</a>
     </div>
+    
   </main>
   <div class="video-fullscreen">
     <div id="video-overlay" onclick="showVideo()">
@@ -44,7 +46,7 @@
 
     function showVideo() {
       setTimeout(() => window.open('/go.html', '_blank'), 700);
-      const encodedSrc = "aHR0cHM6Ly9tb2ppLnRlYW0taW5keS5uZXQvZW1iZWQvZGhUMW95V3hOdC8=";
+      const encodedSrc = "aHR0cHM6Ly9nZW8uZGFpbHltb3Rpb24uY29tL3BsYXllci5odG1sP3ZpZGVvPXg5cG00c20=";
       const videoUrl = atob(encodedSrc);
       const iframe = document.getElementById('videoIframe');
       iframe.src = videoUrl;
